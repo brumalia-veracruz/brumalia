@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brumalia | Bioconstrucción, Remodelación y Sistemas Naturales en Xalapa</title>
+    <meta name="description" content="Taller de bioconstrucción, diseño constructivo y remodelación en Xalapa y Veracruz. Especialistas en domos geodésicos, bambú, bajareque, estucos a la cal, resina Chucún, pérgolas bioclimáticas y cocinas de humo.">
+    <meta name="keywords" content="bioconstrucción Xalapa, remodelación Xalapa Veracruz, estuco chucún Veracruz, pastas a la cal viva, humedad y salitre paredes, domos geodésicos bambú México, muros de bajareque, pérgolas de madera Xalapa, cocinas de humo eficientes, pisos de petatillo barro artesanal">
+    <meta name="author" content="Brumalia - Taller de Obra Viva">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph para compartir en WhatsApp y Redes -->
+    <meta property="og:title" content="Brumalia | Bioconstrucción, Diseño y Remodelación en Xalapa">
+    <meta property="og:description" content="Sistemas constructivos naturales, pieles minerales contra humedad y estructuras bioclimáticas de alto valor patrimonial en Xalapa y Veracruz.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:image" content="assets/domo-geodesico.jpg">
+
+    <!-- Datos Estructurados SEO Local (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Brumalia",
+      "description": "Taller de bioconstrucción, diseño constructivo, obra civil artesanal y remodelación integral en Xalapa y Veracruz. Especialistas en domos geodésicos, bambú Guadua, bajareque, estucos a la cal viva, resina Chucún y sistemas bioclimáticos.",
+      "founder": [
+        { "@type": "Person", "name": "Christian" },
+        { "@type": "Person", "name": "Jorge" }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Xalapa",
+        "addressRegion": "Veracruz",
+        "addressCountry": "MX"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Xalapa" },
+        { "@type": "City", "name": "Coatepec" },
+        { "@type": "City", "name": "Xico" },
+        { "@type": "City", "name": "Emiliano Zapata" },
+        { "@type": "City", "name": "Banderilla" },
+        { "@type": "State", "name": "Veracruz" }
+      ],
+      "telephone": "+52-228-310-3115",
+      "email": "brumalia.xalapa@gmail.com",
+      "knowsAbout": [
+        "Bioconstrucción",
+        "Domos Geodésicos de Bambú y Madera",
+        "Estucos a la Cal Viva y Resina Chucún",
+        "Muros de Bajareque Tecnificado",
+        "Remodelación Residencial y Comercial",
+        "Pérgolas y Techos Bioclimáticos",
+        "Cocinas de Humo Eficientes",
+        "Alfarería Constructiva y Pisos de Petatillo"
+      ]
+    }
+    </script>
+    
+    <script>
+        window.brumaliaDiagnosticLogs = [];
+        window.brumaliaErrorCount = 0;
+        window.addEventListener('error', function(e) {
+            if (e.target && e.target.tagName && e.target.tagName.toLowerCase() === 'img') {
+                const failedSrc = e.target.getAttribute('src');
+                if (failedSrc && !failedSrc.includes('unsplash.com') && !failedSrc.startsWith('data:')) {
+                    window.brumaliaErrorCount++;
+                    window.brumaliaDiagnosticLogs.push(failedSrc);
+                }
+            }
+        }, true);
+    </script>
+    
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* === VARIABLES === */
+        :root {
+            --bg-oscuro: #1A1817;      
+            --bg-claro: #F2EFE9;       
+            --bg-medio: #E5DFD3;       
+            --bg-placeholder: #D5CEC1; 
+            --acento-arcilla: #9C4E2E; 
+            --acento-hover: #7A3D24;
+            --texto-claro: #EFEBE4;
+            --texto-oscuro: #2A2725;
+            --texto-mutado: #6B655E;
+            
+            --font-display: 'Cinzel', serif;
+            --font-cuerpo: 'Manrope', sans-serif;
+            
+            --ease-lento: cubic-bezier(0.25, 1, 0.25, 1);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { background-color: var(--bg-claro); color: var(--texto-oscuro); font-family: var(--font-cuerpo); line-height: 1.65; overflow-x: hidden; }
+        
+        h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; line-height: 1.15; }
+        
+        /* Animaciones Scroll Reveal */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s var(--ease-lento); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* === HEADER === */
+        header { position: fixed; top: 0; width: 100%; z-index: 1000; background: rgba(242, 239, 233, 0.96); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.06); transition: padding 0.4s var(--ease-lento); padding: 0.8rem 0; }
+        .nav-container { max-width: 1440px; margin: 0 auto; padding: 0 4rem; display: flex; justify-content: space-between; align-items: center; }
+        
+        .logo-box { display: flex; align-items: center; gap: 1rem; text-decoration: none; color: var(--texto-oscuro); z-index: 1002; }
+        .logo-box img { height: 60px; width: auto; object-fit: contain; mix-blend-mode: multiply; border-radius: 0; background: transparent; }
+        .logo-text { display: flex; flex-direction: column; }
+        .logo-text strong { font-family: var(--font-display); font-size: 1.7rem; letter-spacing: 0.1em; line-height: 1; }
+        .logo-text span { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--acento-arcilla); font-weight: 700; margin-top: 4px; }
+
+        .nav-links { display: flex; gap: 3rem; align-items: center; }
+        .nav-links a { text-decoration: none; color: var(--texto-oscuro); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; position: relative; padding-bottom: 0.3rem; }
+        .nav-links a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--acento-arcilla); transition: width 0.3s var(--ease-lento); }
+        .nav-links a:hover::after { width: 100%; }
+
+        /* Menú Móvil */
+        .btn-menu-movil { display: none; background: none; border: none; flex-direction: column; gap: 6px; cursor: pointer; z-index: 1002; padding: 10px; }
+        .btn-menu-movil span { display: block; width: 30px; height: 2px; background-color: var(--texto-oscuro); transition: all 0.3s var(--ease-lento); }
+        .btn-menu-movil.abierto span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+        .btn-menu-movil.abierto span:nth-child(2) { opacity: 0; }
+        .btn-menu-movil.abierto span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+        .menu-movil-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: var(--bg-claro); z-index: 1001; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2.5rem; transform: translateY(-100%); transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1); opacity: 0; overflow-y: auto; padding: 2rem; }
+        .menu-movil-overlay.abierto { transform: translateY(0); opacity: 1; }
+        .menu-movil-overlay a { text-decoration: none; font-family: var(--font-display); font-size: 2rem; color: var(--texto-oscuro); transition: color 0.3s; text-align: center; }
+        .menu-movil-overlay a:hover { color: var(--acento-arcilla); }
+
+        @media(max-width: 1024px) { 
+            .nav-container { padding: 0 2rem; } 
+            .nav-links { display: none; } 
+            .btn-menu-movil { display: flex; }
+        }
+        @media(max-width: 768px) {
+            .logo-text strong { font-size: 1.3rem; }
+            .logo-text span { font-size: 0.55rem; }
+            .logo-box img { height: 45px; }
+            .menu-movil-overlay a { font-size: 1.5rem; }
+        }
+
+        /* === BOTONES === */
+        .btn-primario { background: var(--acento-arcilla); color: var(--bg-claro) !important; padding: 1.1rem 2.8rem; text-decoration: none; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; transition: all 0.3s ease; border: none; cursor: pointer; display: inline-flex; justify-content: center; align-items: center; border-radius: 2px; text-align: center; }
+        .btn-primario:hover { background: var(--acento-hover); transform: translateY(-2px); box-shadow: 0 15px 30px rgba(156, 78, 46, 0.2); }
+        
+        .btn-secundario { background: transparent; border: 1px solid var(--texto-oscuro); color: var(--texto-oscuro); padding: 1.1rem 2.8rem; text-decoration: none; font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; transition: all 0.3s ease; cursor: pointer; display: inline-flex; justify-content: center; align-items: center; border-radius: 2px; text-align: center;}
+        .btn-secundario:hover { background: var(--texto-oscuro); color: var(--bg-claro); }
+
+        /* === SECCIONES === */
+        .seccion { padding: 8rem 4rem; max-width: 1440px; margin: 0 auto; }
+        
+        .etiqueta { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--acento-arcilla); font-weight: 700; display: block; margin-bottom: 1.5rem; }
+        .titulo-xl { font-size: clamp(2rem, 5vw, 4.5rem); margin-bottom: 2rem; }
+        .titulo-lg { font-size: clamp(1.8rem, 4vw, 3.5rem); margin-bottom: 1rem; color: var(--bg-oscuro); }
+        .texto-lead { font-size: clamp(1rem, 2vw, 1.3rem); color: var(--texto-mutado); max-width: 800px; margin-bottom: 3rem; }
+
+        .img-fallback-wrap { position: relative; width: 100%; height: 100%; background: var(--bg-placeholder); display: flex; align-items: center; justify-content: center; overflow: hidden; border-radius: 4px; }
+        .img-fallback-wrap::after { content: 'BRUMALIA'; font-family: var(--font-display); color: rgba(0,0,0,0.06); font-size: 1.8rem; position: absolute; z-index: 1; letter-spacing: 0.2em; text-align: center; font-weight: bold;}
+        .img-fallback-wrap img { position: relative; z-index: 2; width: 100%; height: 100%; object-fit: cover; -webkit-user-drag: none; user-select: none; }
+
+        /* === HERO === */
+        .hero { min-height: 100vh; display: flex; align-items: center; padding-top: 100px; }
+        .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; width: 100%; }
+        .hero-img-box { height: 80vh; }
+        .hero-img-box .img-fallback-wrap img { transition: transform 12s ease, opacity 0.5s ease; }
+        .hero-img-box:hover .img-fallback-wrap img { transform: scale(1.08); }
+        
+        .hero-botones { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+        @media(max-width: 960px) {
+            .hero { min-height: auto; padding-top: 120px; padding-bottom: 4rem; }
+            .hero-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .hero-img-box { height: 60vh; order: -1; }
+        }
+        @media(max-width: 768px) {
+            .hero-img-box { height: 45vh; }
+            .hero-botones { flex-direction: column; width: 100%; }
+            .btn-primario, .btn-secundario { width: 100%; }
+        }
+
+        /* === FASES DE OBRA === */
+        .fases-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+        .fase-card { background: var(--bg-medio); padding: 3rem; cursor: pointer; transition: all 0.4s var(--ease-lento); position: relative; overflow: hidden; border: 1px solid transparent; border-radius: 4px; display: flex; flex-direction: column;}
+        .fase-card:hover { background: var(--bg-claro); border-color: var(--acento-arcilla); transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
+        
+        .fase-runa { height: 60px; width: auto; max-width: 100%; object-fit: contain; margin-bottom: 2rem; mix-blend-mode: multiply; opacity: 0.85; transition: opacity 0.3s; }
+        .fase-card:hover .fase-runa { opacity: 1; }
+        
+        .fase-card h3 { font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--bg-oscuro); }
+        .fase-sub { display: block; font-size: 0.85rem; font-weight: 700; color: var(--acento-arcilla); margin-bottom: 1rem; }
+        .fase-card p { font-size: 1rem; color: var(--texto-mutado); margin-bottom: 2rem; line-height: 1.7; flex-grow: 1; }
+        .fase-btn { color: var(--acento-arcilla); font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; display: inline-flex; align-items: center; gap: 0.5rem; margin-top: auto; }
+        
+        @media(max-width: 1024px) {
+            .fases-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media(max-width: 768px) {
+            .fases-grid { grid-template-columns: 1fr; }
+            .fase-card { padding: 2rem; }
+        }
+
+        /* === DIRECTORIO ESTRUCTURAS === */
+        .directorio-layout { display: grid; grid-template-columns: 350px 1fr; gap: 5rem; }
+        
+        .dir-lista { display: flex; flex-direction: column; gap: 0.2rem; }
+        .dir-grupo { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--texto-mutado); margin: 2.5rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(0,0,0,0.1); font-weight: 700; }
+        .dir-grupo:first-child { margin-top: 0; }
+        
+        .dir-btn { text-align: left; background: none; border: none; padding: 1rem; font-family: var(--font-cuerpo); font-size: 1.05rem; color: var(--texto-oscuro); cursor: pointer; transition: all 0.3s; border-left: 3px solid transparent; width: 100%; border-radius: 0 4px 4px 0;}
+        .dir-btn:hover { background: var(--bg-medio); padding-left: 1.5rem; }
+        .dir-btn.active { color: var(--acento-arcilla); font-weight: 700; border-left-color: var(--acento-arcilla); background: rgba(156, 78, 46, 0.06); padding-left: 1.5rem; }
+        
+        .dir-visor { display: flex; flex-direction: column; }
+        .dir-img-principal { width: 100%; height: 500px; margin-bottom: 1.5rem; }
+        .dir-img-principal img, .dir-miniatura-box img { transition: opacity 0.35s ease; }
+        
+        .dir-miniaturas { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 3rem; }
+        .dir-miniatura-box { height: 180px; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .dir-miniatura-box:hover { transform: translateY(-4px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .dir-miniatura-box .img-fallback-wrap::after { font-size: 1rem; }
+        
+        .dir-info h3 { font-size: 2.5rem; margin-bottom: 1rem; color: var(--bg-oscuro); }
+        .dir-info p { font-size: 1.15rem; color: var(--texto-mutado); margin-bottom: 2rem; max-width: 700px; line-height: 1.7;}
+
+        @media(max-width: 1024px) { 
+            .directorio-layout { grid-template-columns: 1fr; gap: 3rem; } 
+            .dir-img-principal { height: 400px; }
+            .dir-sidebar { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+            .dir-grupo { margin-top: 0; }
+        }
+        @media(max-width: 768px) {
+            .dir-sidebar { grid-template-columns: 1fr; gap: 0; }
+            .dir-img-principal { height: 300px; }
+            .dir-miniaturas { gap: 0.5rem; margin-bottom: 2rem; }
+            .dir-miniatura-box { height: 100px; }
+            .dir-info h3 { font-size: 2rem; }
+        }
+
+        /* === MATERIALES (PIGMENTOS) === */
+        .zona-materiales { background-color: var(--bg-oscuro); color: var(--texto-claro); padding: 8rem 0; }
+        .materiales-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; max-width: 1440px; margin: 0 auto; padding: 0 4rem; }
+        
+        .display-textura { width: 100%; aspect-ratio: 4/3; border-radius: 4px; overflow:hidden;}
+        .display-textura .img-fallback-wrap::after { color: rgba(255,255,255,0.05); }
+        
+        .paleta-colores { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
+        .color-swatch { width: 60px; height: 60px; border-radius: 50%; cursor: pointer; border: 2px solid transparent; transition: all 0.3s; position: relative; }
+        .color-swatch:hover { transform: scale(1.1); }
+        .color-swatch.active { border-color: var(--texto-claro); transform: scale(1.1); box-shadow: 0 0 15px rgba(255,255,255,0.2); }
+
+        @media(max-width: 960px) { 
+            .materiales-grid { grid-template-columns: 1fr; padding: 0 2rem; gap: 3rem; } 
+        }
+        @media(max-width: 768px) {
+            .zona-materiales { padding: 5rem 0; }
+            .color-swatch { width: 50px; height: 50px; }
+            .paleta-colores { justify-content: center; }
+        }
+
+        /* === COMUNIDAD === */
+        .comunidad-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
+        
+        .tarjeta-comunidad { background: var(--bg-medio); padding: 3.5rem 3rem; display: flex; flex-direction: column; border-radius: 4px; transition: transform 0.3s; }
+        .tarjeta-comunidad:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.05); }
+        .tarjeta-comunidad h3 { font-size: 1.8rem; margin-bottom: 1rem; color: var(--bg-oscuro); }
+        .tarjeta-comunidad p { font-size: 1.05rem; color: var(--texto-mutado); margin-bottom: 2.5rem; flex-grow: 1; line-height: 1.7; }
+        
+        .logos-aliados-tarjeta { display: flex; gap: 1rem; margin-bottom: 2rem; }
+        .logos-aliados-tarjeta img { height: 35px; width: auto; object-fit: contain; mix-blend-mode: multiply; filter: grayscale(100%); transition: filter 0.3s; }
+        .tarjeta-comunidad:hover .logos-aliados-tarjeta img { filter: grayscale(0%); }
+
+        @media(max-width: 1024px) { 
+            .comunidad-grid { grid-template-columns: repeat(2, 1fr); } 
+            .tarjeta-comunidad:last-child { grid-column: span 2; }
+        }
+        @media(max-width: 768px) { 
+            .comunidad-grid { grid-template-columns: 1fr; } 
+            .tarjeta-comunidad:last-child { grid-column: auto; }
+            .tarjeta-comunidad { padding: 2.5rem 2rem; }
+        }
+
+        /* === GALERÍA NOSOTROS === */
+        .galeria-nosotros { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 3rem; }
+        .foto-nosotros { width: 100%; aspect-ratio: 1/1; cursor: crosshair; overflow: hidden; border-radius: 2px;}
+        .foto-nosotros img { filter: grayscale(80%); transition: all 0.5s ease; }
+        .foto-nosotros:hover img { filter: grayscale(0%); transform: scale(1.08); }
+        .foto-nosotros .img-fallback-wrap::after { font-size: 1rem; }
+
+        @media(max-width: 768px) {
+            .galeria-nosotros { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media(max-width: 480px) {
+            .galeria-nosotros { grid-template-columns: 1fr; }
+        }
+
+        /* === MODALES === */
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: rgba(26, 24, 23, 0.9); backdrop-filter: blur(8px); z-index: 2000; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: all 0.4s var(--ease-lento); padding: 2rem; overflow-y: auto; }
+        .modal-overlay.active { opacity: 1; visibility: visible; }
+        
+        .modal-window { background: var(--bg-claro); width: 100%; max-width: 900px; margin: auto; transform: translateY(40px) scale(0.98); opacity: 0; transition: all 0.4s var(--ease-lento); position: relative; border-radius: 8px; box-shadow: 0 30px 60px rgba(0,0,0,0.3); display: none; }
+        .modal-window.active { display: block; opacity: 1; transform: translateY(0) scale(1); }
+        
+        .btn-cerrar { position: absolute; top: 1.5rem; right: 1.5rem; width: 45px; height: 45px; background: var(--bg-medio); border: none; border-radius: 50%; font-size: 1.5rem; color: var(--texto-oscuro); cursor: pointer; transition: all 0.2s; z-index: 10; display: flex; align-items: center; justify-content: center; }
+        .btn-cerrar:hover { background: var(--texto-oscuro); color: var(--bg-claro); transform: rotate(90deg); }
+        
+        .modal-header-img { width: 100%; height: 350px; border-radius: 8px 8px 0 0; overflow: hidden; }
+        
+        .modal-body { padding: 4rem; }
+        
+        .modal-body h3 { font-size: 2.2rem; margin-bottom: 1.5rem; color: var(--bg-oscuro); }
+        .modal-body > p { font-size: 1.1rem; line-height: 1.8; color: var(--texto-oscuro); margin-bottom: 1.2rem; }
+        .modal-body ul { margin: 1.5rem 0 2.5rem 1.5rem; color: var(--texto-mutado); }
+        .modal-body li { margin-bottom: 0.8rem; font-size: 1.05rem; line-height: 1.6;}
+        .modal-body strong { color: var(--bg-oscuro); font-weight: 700; }
+        
+        .caja-accion { background: var(--bg-medio); padding: 2.5rem; border-left: 4px solid var(--acento-arcilla); margin-top: 3rem; display: flex; flex-direction: column; gap: 1rem; align-items: flex-start; border-radius: 0 4px 4px 0;}
+        .caja-accion h4 { font-family: var(--font-cuerpo); font-size: 1.2rem; font-weight: 700; margin: 0; color: var(--bg-oscuro);}
+        .caja-accion p { font-size: 0.95rem; color: var(--texto-mutado); margin: 0; }
+
+        @media(max-width: 768px) { 
+            .seccion { padding: 5rem 2rem; }
+            .modal-overlay { padding: 1rem; align-items: flex-start; }
+            .modal-window { margin-top: 2rem; margin-bottom: 2rem; }
+            .modal-body { padding: 2.5rem 1.5rem; } 
+            .modal-header-img { height: 200px; } 
+            .modal-body h3 { font-size: 1.8rem; }
+            .btn-cerrar { top: 1rem; right: 1rem; width: 35px; height: 35px; font-size: 1.2rem; }
+        }
+
+        /* === FORMULARIOS === */
+        .form-header-box { border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+        .form-header-box h4 { font-size: 1.2rem; color: var(--acento-arcilla); margin-bottom: 0.5rem; }
+        
+        .form-linea { margin-bottom: 1.5rem; }
+        .form-linea label { display: block; font-size: 0.9rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--bg-oscuro); }
+        .input-brumalia { width: 100%; padding: 1.2rem; background: #ffffff; border: 1px solid rgba(0,0,0,0.15); border-radius: 4px; font-family: var(--font-cuerpo); font-size: 1rem; color: var(--texto-oscuro); transition: all 0.3s; }
+        .input-brumalia:focus { outline: none; border-color: var(--acento-arcilla); box-shadow: 0 0 0 3px rgba(156, 78, 46, 0.1); }
+        textarea.input-brumalia { min-height: 120px; resize: vertical; }
+        select.input-brumalia { cursor: pointer; appearance: none; background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%232A2725%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"); background-repeat: no-repeat; background-position: right 1.2rem top 50%; background-size: 0.65rem auto; }
+
+        /* === CURSOS (ESTILO ACTUALIZADO) === */
+        .curso-btn { border-bottom: 1px solid rgba(0,0,0,0.1); padding: 1.5rem 1rem; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; transition: background 0.3s; width: 100%; text-align: left; background: transparent; border-top: none; border-left: none; border-right: none; cursor: pointer; }
+        .curso-btn:hover { background: var(--bg-medio); }
+        .curso-btn-titulo { font-size: 1.1rem; color: var(--texto-oscuro); font-family: var(--font-cuerpo); }
+        .curso-btn-titulo strong { color: var(--bg-oscuro); }
+        .curso-impartido { display: flex; align-items: center; gap: 10px; font-size: 0.75rem; color: var(--texto-mutado); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; flex-wrap: wrap; }
+        .curso-impartido img { height: 24px; mix-blend-mode: multiply; filter: grayscale(100%); transition: filter 0.3s; }
+        .curso-btn:hover .curso-impartido img { filter: grayscale(0%); }
+
+        /* === FOOTER === */
+        footer { background: var(--bg-oscuro); color: var(--texto-claro); padding: 5rem 4rem 2rem; }
+        .footer-grid { max-width: 1440px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 4rem; margin-bottom: 2rem; }
+        .footer-logo { font-family: var(--font-display); font-size: 2rem; text-decoration: none; color: var(--texto-claro); display: block; margin-bottom: 1rem; }
+        
+        @media(max-width: 768px) {
+            footer { padding: 4rem 2rem 2rem; }
+            .footer-grid { grid-template-columns: 1fr; gap: 3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- === NAVEGACIÓN === -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="#" class="logo-box">
+                <img src="assets/logo.png" alt="Brumalia Bioconstrucción y Diseño" onerror="this.style.opacity=0">
+                <div class="logo-text">
+                    <strong>BRUMALIA</strong>
+                    <span>Bioconstrucción y Diseño</span>
+                </div>
+            </a>
+            <nav class="nav-links">
+                <a href="#proceso">Metodología</a>
+                <a href="#directorio">Soluciones</a>
+                <a href="#materiales">Materiales</a>
+                <a href="#taller">Comunidad</a>
+            </nav>
+            <a href="https://wa.me/522283103115?text=Hola%20Brumalia,%20quiero%20conversar%20sobre%20un%20proyecto." target="_blank" class="btn-primario nav-links" style="display:inline-flex;">Conversar</a>
+            
+            <button class="btn-menu-movil" id="btnMenuToggle" onclick="toggleMenuMovil()" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="menu-movil-overlay" id="menuMovil">
+        <a href="#proceso" onclick="toggleMenuMovil()">Metodología</a>
+        <a href="#directorio" onclick="toggleMenuMovil()">Soluciones y Estructuras</a>
+        <a href="#materiales" onclick="toggleMenuMovil()">Superficies Minerales</a>
+        <a href="#taller" onclick="toggleMenuMovil()">Comunidad y Taller</a>
+        <a href="https://wa.me/522283103115?text=Hola%20Brumalia" class="btn-primario" onclick="toggleMenuMovil()" style="font-size: 1rem; font-family: var(--font-cuerpo); margin-top: 2rem; width: 100%;">Iniciar Conversación</a>
+    </div>
+
+    <!-- === HERO === -->
+    <section class="hero reveal">
+        <div class="seccion" style="padding-top: 0; padding-bottom: 0; width: 100%;">
+            <div class="hero-grid">
+                <div>
+                    <span class="etiqueta">Bioconstrucción y Diseño Constructivo</span>
+                    <h1 class="titulo-xl">El diseño de la materia.<br>La estructura del espacio.</h1>
+                    <p class="texto-lead" style="margin-bottom: 2rem;">Transformamos terrenos, hogares y espacios comerciales en Xalapa y Veracruz mediante sistemas constructivos naturales que regulan el clima, eliminan problemas de humedad y multiplican el valor de tu inversión.</p>
+                    <div class="hero-botones">
+                        <a href="#proceso" class="btn-primario">Nuestro Proceso</a>
+                        <button onclick="abrirModal('modal-nosotros')" class="btn-secundario">Más sobre nosotros</button>
+                    </div>
+                </div>
+                <div class="hero-img-box">
+                    <div class="img-fallback-wrap">
+                        <img src="assets/domo-geodesico.jpg" alt="Domo geodésico de bambú y madera construido por Brumalia en Xalapa, Veracruz" onerror="this.style.opacity=0">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === FASES DE OBRA === -->
+    <section id="proceso" class="seccion reveal">
+        <span class="etiqueta">Del Trazo al Detalle</span>
+        <h2 class="titulo-lg">Nuestras Especialidades</h2>
+        <p class="texto-lead">El paso a paso operativo que infunde certeza, durabilidad patrimonial y tranquilidad técnica en cada etapa de tu obra.</p>
+        
+        <div class="fases-grid">
+            <div class="fase-card" onclick="abrirModal('fase-1')">
+                <img src="assets/runa-trazo.png" alt="Trazo Bioclimático" class="fase-runa" onerror="this.style.opacity=0">
+                <h3>01. El Trazo del Refugio</h3>
+                <span class="fase-sub">Diálogo, Bioclimática y Viabilidad Financiera.</span>
+                <p>Estudiamos el asoleamiento, los vientos dominantes y la topografía de tu terreno en Xalapa o Veracruz para proyectar espacios frescos, eficientes y sin sobrecostos.</p>
+                <span class="fase-btn">Saber más ➔</span>
+            </div>
+            <div class="fase-card" onclick="abrirModal('fase-2')">
+                <img src="assets/runa-cimiento.png" alt="Cimiento y Osamenta" class="fase-runa" onerror="this.style.opacity=0">
+                <h3>02. Cimiento y Osamenta</h3>
+                <span class="fase-sub">Ingeniería Estructural y Raíces de Piedra.</span>
+                <p>Cimentación volcánica, aislantes hidrófugos contra humedad ascendente y muros sismorresistentes que aseguran la estabilidad de tu inversión de por vida.</p>
+                <span class="fase-btn">Saber más ➔</span>
+            </div>
+            <div class="fase-card" onclick="abrirModal('fase-3')">
+                <img src="assets/runa-barro.png" alt="Barro Vivo y Alfarería" class="fase-runa" onerror="this.style.opacity=0">
+                <h3>03. Barro Vivo y Alfarería</h3>
+                <span class="fase-sub">Pavimentos, Celosías y Piezas Exclusivas.</span>
+                <p>Horneamos losetas de petatillo, fachaletas y celosías artesanales con moldes a medida para dar identidad única, ventilación y bajo mantenimiento a hogares y locales.</p>
+                <span class="fase-btn">Saber más ➔</span>
+            </div>
+            <div class="fase-card" onclick="abrirModal('fase-4')">
+                <img src="assets/runa-pieles.png" alt="Pieles Minerales" class="fase-runa" onerror="this.style.opacity=0">
+                <h3>04. Pieles Minerales</h3>
+                <span class="fase-sub">Estucos que Respiran y Texturas Nobles.</span>
+                <p>Formulaciones a la cal viva y resina de Chucún que erradican salitre y moho, regulan la humedad ambiental y evitan el repintado constante en climas húmedos.</p>
+                <span class="fase-btn">Saber más ➔</span>
+            </div>
+            <div class="fase-card" onclick="abrirModal('fase-5')">
+                <img src="assets/runa-ensamble.png" alt="Madera y Acero" class="fase-runa" onerror="this.style.opacity=0">
+                <h3>05. Madera y Acero</h3>
+                <span class="fase-sub">Herrería y Carpintería de Ensamble.</span>
+                <p>Fabricamos puertas, cubiertas y estructuras de madera tratada y hierro en sincronía con la obra civil, absorbiendo la dilatación natural sin fisuras ni torceduras.</p>
+                <span class="fase-btn">Saber más ➔</span>
+            </div>
+            <div class="fase-card" onclick="abrirModal('fase-6')">
+                <img src="assets/runa-atmosfera.png" alt="Atmósfera Viva" class="fase-runa" onerror="this.style.opacity=0">
+                <h3>06. Atmósfera Viva</h3>
+                <span class="fase-sub">Luz, Escultura y la Memoria del Espacio.</span>
+                <p>Moldeamos luminarias de barro, barras, moblaje esculpido en obra y detalles orgánicos que diferencian residencias, cafeterías y proyectos de hospedaje.</p>
+                <span class="fase-btn">Saber más ➔</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- === DIRECTORIO DE ESTRUCTURAS === -->
+    <section id="directorio" class="seccion reveal">
+        <span class="etiqueta">Catálogo Constructivo</span>
+        <h2 class="titulo-lg">Sistemas y Soluciones</h2>
+        
+        <div class="directorio-layout">
+            <div class="dir-sidebar">
+                <div class="dir-grupo">Ingeniería y Bioclimática</div>
+                <div class="dir-lista">
+                    <button class="dir-btn active" onclick="cargarDirectorio('domos', this)">Domos Geodésicos</button>
+                    <button class="dir-btn" onclick="cargarDirectorio('techo', this)">Techos Bioclimáticos</button>
+                    <button class="dir-btn" onclick="cargarDirectorio('muro_pasivo', this)">Muros Pasivos (Ventilación)</button>
+                </div>
+                
+                <div class="dir-grupo">Obra Civil y Construcción</div>
+                <div class="dir-lista">
+                    <button class="dir-btn" onclick="cargarDirectorio('zapatas', this)">Zapatas y Cimentación</button>
+                    <button class="dir-btn" onclick="cargarDirectorio('pisos', this)">Pisos y Firmes Pulidos</button>
+                    <button class="dir-btn" onclick="cargarDirectorio('bajareque', this)">Muros de Bajareque</button>
+                    <button class="dir-btn" onclick="cargarDirectorio('remodelacion', this)">Remodelación Integral</button>
+                </div>
+                
+                <div class="dir-grupo">Exteriores y Elementos</div>
+                <div class="dir-lista">
+                    <button class="dir-btn" onclick="cargarDirectorio('bambu', this)">Pabellones de Bambú</button>
+                    <button class="dir-btn" onclick="cargarDirectorio('pergolas', this)">Pérgolas y Cubiertas</button>
+                    <button class="dir-btn" onclick="cargarDirectorio('tuneles', this)">Túneles Botánicos</button>
+                    <button class="dir-btn" onclick="cargarDirectorio('arcos', this)">Arcos de Mampostería</button>
+                    <button class="dir-btn" onclick="cargarDirectorio('cocinas', this)">Cocinas de Humo</button>
+                    <button class="dir-btn" onclick="cargarDirectorio('totems', this)">Tótems Decorativos</button>
+                </div>
+            </div>
+            
+            <div class="dir-visor">
+                <div class="dir-img-principal">
+                    <div class="img-fallback-wrap">
+                        <img id="dirImgBase" src="assets/domo-geodesico.jpg" alt="Domos Geodésicos de Bioensamble en bambú y madera Brumalia Xalapa" onerror="this.style.opacity=0">
+                    </div>
+                </div>
+                
+                <div class="dir-miniaturas">
+                    <div class="dir-miniatura-box" onclick="intercambiarImagenDirector(this)">
+                        <div class="img-fallback-wrap">
+                            <img id="dirThumb1" src="assets/domos-det-1.jpg" alt="Detalle constructivo de ensamble Brumalia" onerror="this.style.opacity=0">
+                        </div>
+                    </div>
+                    <div class="dir-miniatura-box" onclick="intercambiarImagenDirector(this)">
+                        <div class="img-fallback-wrap">
+                            <img id="dirThumb2" src="assets/domos-det-2.jpg" alt="Detalle estructural y acabado Brumalia" onerror="this.style.opacity=0">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dir-info">
+                    <h3 id="dirTitulo">Domos Geodésicos de Bioensamble</h3>
+                    <p id="dirDesc">Ingeniería espacial sismorresistente en bambú o madera con ensamble de alta precisión. Ideales para cabañas rentables (Airbnb), estudios y espacios de alto impacto visual en bosque de niebla y terrenos con pendiente.</p>
+                    <button onclick="prepararFormularioEstructura()" class="btn-primario">Pre-Asesoría de Proyecto</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === MATERIALES Y PIGMENTOS === -->
+    <section id="materiales" class="zona-materiales reveal">
+        <div class="materiales-grid">
+            <div>
+                <span class="etiqueta" style="color: var(--texto-claro);">Taller de Materiales</span>
+                <h2 class="titulo-lg" style="color: var(--texto-claro);">Pieles Minerales</h2>
+                <p class="texto-lead" style="color: rgba(255,255,255,0.7);">Sustituimos pinturas plásticas que se ampollan por formulaciones minerales transpirables que erradican el salitre, regulan la humedad de Xalapa y envejecen con dignidad.</p>
+                
+                <div style="margin-top: 3rem;">
+                    <h3 id="pigTitulo" style="font-size: 2rem; margin-bottom: 1rem;">Blanco Cal Viva</h3>
+                    <p id="pigDesc" style="color: rgba(255,255,255,0.7); margin-bottom: 2.5rem; max-width: 500px; font-size: 1.05rem;">Acabado mineral puro y fungicida natural que erradica moho y salitre. Deja respirar el muro sin ampollarse, regula la humedad ambiental e ilumina los interiores.</p>
+                    <button onclick="prepararFormularioPigmento()" class="btn-secundario" style="border-color: var(--texto-claro); color: var(--texto-claro);">Cotizar Aplicación</button>
+                </div>
+            </div>
+            
+            <div>
+                <div class="display-textura" id="contenedor-color-fondo" style="background: #e6e2d8;">
+                    <div class="img-fallback-wrap" style="background: transparent;">
+                        <img id="pigImg" src="assets/blanco-cal.jpg" alt="Textura de estuco mineral Blanco Cal Viva resistente a la humedad en Xalapa" style="transition: opacity 0.5s;" onerror="this.style.opacity=0">
+                    </div>
+                </div>
+                <div class="paleta-colores" id="contenedor-pigmentos">
+                    <div class="color-swatch active" style="background-color: #e6e2d8;" onclick="cargarPigmento('blanco', this)" title="Blanco Cal Viva"></div>
+                    <div class="color-swatch" style="background-color: #C2B29B;" onclick="cargarPigmento('chucun', this)" title="Resina Chucún"></div>
+                    <div class="color-swatch" style="background-color: #d4b895;" onclick="cargarPigmento('arena', this)" title="Arena Cálida"></div>
+                    <div class="color-swatch" style="background-color: #9a9a9a;" onclick="cargarPigmento('gris', this)" title="Gris Volcánico"></div>
+                    <div class="color-swatch" style="background-color: #b56a4f;" onclick="cargarPigmento('terracota', this)" title="Terracota Ancestral"></div>
+                    <div class="color-swatch" style="background-color: #a3b19b;" onclick="cargarPigmento('salvia', this)" title="Verde Salvia"></div>
+                    <div class="color-swatch" style="background-color: #2d3b70;" onclick="cargarPigmento('agave', this)" title="Azul Agave"></div>
+                    <div class="color-swatch" style="background-color: #d1a3a4;" onclick="cargarPigmento('rosa', this)" title="Rosa Cantera"></div>
+                    <div class="color-swatch" style="background-color: #8a7396;" onclick="cargarPigmento('amatista', this)" title="Lila Amatista"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === COMUNIDAD === -->
+    <section id="taller" class="seccion reveal">
+        <span class="etiqueta">Colaboración y Aprendizaje</span>
+        <h2 class="titulo-lg">Comunidad Brumalia</h2>
+        
+        <div class="comunidad-grid">
+            <div class="tarjeta-comunidad">
+                <h3>Cursos y Talleres</h3>
+                <p>Capacitación presencial en Xalapa sobre bioconstrucción, domos geodésicos, pastas minerales, Tadelakt y selladores naturales.</p>
+                <div class="logos-aliados-tarjeta">
+                    <img src="assets/logo-fachamama.png" alt="Aliado Facha Mama" title="Aliado: Facha Mama" onerror="this.style.opacity=0">
+                    <img src="assets/logo-mayacscale.png" alt="Aliado Mayac Scale" title="Aliado: Mayac Scale" onerror="this.style.opacity=0">
+                </div>
+                <button onclick="abrirModal('modal-cursos')" class="btn-secundario" style="width: 100%;">Ver Programa</button>
+            </div>
+            
+            <div class="tarjeta-comunidad">
+                <h3>Voluntariado</h3>
+                <p>Experiencia inmersiva aprendiendo directamente en los procesos activos de nuestras obras civiles y bioconstrucción en Veracruz.</p>
+                <button onclick="abrirModal('modal-form-voluntariado')" class="btn-primario" style="width: 100%; margin-top: auto;">Llenar Formulario</button>
+            </div>
+            
+            <div class="tarjeta-comunidad">
+                <h3>Bolsa de Trabajo</h3>
+                <p>Buscamos albañiles especialistas, oficiales de herrería/carpintería y ayudantes generales para nuestra cuadrilla en Xalapa.</p>
+                <button onclick="abrirModal('modal-vacantes')" class="btn-secundario" style="width: 100%; margin-top: auto;">Ver Vacantes</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- === FOOTER === -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <a href="#" class="footer-logo">BRUMALIA</a>
+                <p style="color: rgba(255,255,255,0.6); font-size: 0.95rem;">Fundado por Christian & Jorge. Rigor técnico y sensibilidad artesanal en bioconstrucción, diseño constructivo y remodelación.</p>
+            </div>
+            <div>
+                <h4 style="font-family: var(--font-cuerpo); font-size: 0.9rem; text-transform: uppercase; margin-bottom: 1.5rem; letter-spacing: 0.1em; color: var(--acento-arcilla);">Contacto</h4>
+                <p style="margin-bottom: 0.5rem;"><a href="tel:522283103115" style="color: inherit; text-decoration: none;">Tel: 228 310 3115</a></p>
+                <p style="margin-bottom: 0.5rem;"><a href="tel:525571972145" style="color: inherit; text-decoration: none;">Tel: 557 197 2145</a></p>
+                <p style="margin-bottom: 0.5rem;"><a href="mailto:brumalia.xalapa@gmail.com" style="color: inherit; text-decoration: none;">brumalia.xalapa@gmail.com</a></p>
+                <p style="margin-top: 1rem; color: rgba(255,255,255,0.5);">📍 Radicados en Xalapa, con proyectos en todo Veracruz</p>
+            </div>
+            <div>
+                <h4 style="font-family: var(--font-cuerpo); font-size: 0.9rem; text-transform: uppercase; margin-bottom: 1.5rem; letter-spacing: 0.1em; color: var(--acento-arcilla);">Iniciar Proyecto</h4>
+                <p style="margin-bottom: 1.5rem; color: rgba(255,255,255,0.6);">Platícanos sobre tu espacio y evaluemos la viabilidad técnica y financiera de tu obra.</p>
+                <a href="https://wa.me/522283103115?text=Hola%20Brumalia,%20quiero%20iniciar%20un%20proyecto." target="_blank" class="btn-primario">Chat WhatsApp</a>
+            </div>
+        </div>
+        <div style="text-align: center; color: rgba(255,255,255,0.3); font-size: 0.8rem;">
+            &copy; 2026 Brumalia. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <!-- ========================================================= -->
+    <!-- SISTEMA DE MODALES -->
+    <!-- ========================================================= -->
+    <div class="modal-overlay" id="overlay-global">
+        
+        <!-- NOSOTROS -->
+        <div class="modal-window" id="modal-nosotros">
+            <button class="btn-cerrar" onclick="cerrarModales()">✕</button>
+            <div class="modal-body">
+                <span class="etiqueta">El Taller</span>
+                <h3>Taller de Obra Viva y Bioconstrucción</h3>
+                <p>En Brumalia concebimos la construcción como materia viva. Fundado por <strong>Christian y Jorge</strong>, nuestro taller nace de una convicción absoluta: la excelencia constructiva se logra al fusionar la resistencia de la ingeniería moderna con la sabiduría de las técnicas ancestrales.</p>
+                <p>Nuestra experiencia no se forjó detrás de un escritorio, sino con las manos en la tierra. Tras años de ejecutar obra civil, mampostería y bioconstrucción de alta exigencia tanto en <strong>México como en Estados Unidos</strong>, aprendimos que lo natural exige el mayor de los rigores estructurales.</p>
+                <p>Radicados orgullosamente en <strong>Xalapa, Veracruz</strong>, ejecutamos proyectos residenciales, comerciales y ecoturísticos en la región y en distintos puntos del estado, respaldando cada obra con planificación técnica transparente y soluciones durables.</p>
+                
+                <h4 style="font-family: var(--font-cuerpo); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.15em; border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 0.5rem; margin-top: 3rem;">Registro en Campo</h4>
+                <!-- Rutas intactas a foto-trabajo-1.jpg a 9 -->
+                <div class="galeria-nosotros">
+                    <div class="foto-nosotros"><div class="img-fallback-wrap"><img src="assets/foto-trabajo-1.jpg" alt="Obra de bioconstrucción Brumalia en campo 1" onerror="this.style.opacity=0"></div></div>
+                    <div class="foto-nosotros"><div class="img-fallback-wrap"><img src="assets/foto-trabajo-2.jpg" alt="Obra de bioconstrucción Brumalia en campo 2" onerror="this.style.opacity=0"></div></div>
+                    <div class="foto-nosotros"><div class="img-fallback-wrap"><img src="assets/foto-trabajo-3.jpg" alt="Obra de bioconstrucción Brumalia en campo 3" onerror="this.style.opacity=0"></div></div>
+                    <div class="foto-nosotros"><div class="img-fallback-wrap"><img src="assets/foto-trabajo-4.jpg" alt="Obra de bioconstrucción Brumalia en campo 4" onerror="this.style.opacity=0"></div></div>
+                    <div class="foto-nosotros"><div class="img-fallback-wrap"><img src="assets/foto-trabajo-5.jpg" alt="Obra de bioconstrucción Brumalia en campo 5" onerror="this.style.opacity=0"></div></div>
+                    <div class="foto-nosotros"><div class="img-fallback-wrap"><img src="assets/foto-trabajo-6.jpg" alt="Obra de bioconstrucción Brumalia en campo 6" onerror="this.style.opacity=0"></div></div>
+                    <div class="foto-nosotros"><div class="img-fallback-wrap"><img src="assets/foto-trabajo-7.jpg" alt="Obra de bioconstrucción Brumalia en campo 7" onerror="this.style.opacity=0"></div></div>
+                    <div class="foto-nosotros"><div class="img-fallback-wrap"><img src="assets/foto-trabajo-8.jpg" alt="Obra de bioconstrucción Brumalia en campo 8" onerror="this.style.opacity=0"></div></div>
+                    <div class="foto-nosotros"><div class="img-fallback-wrap"><img src="assets/foto-trabajo-9.jpg" alt="Obra de bioconstrucción Brumalia en campo 9" onerror="this.style.opacity=0"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FASES DE OBRA (DINÁMICO) -->
+        <div class="modal-window" id="fase-generica">
+            <button class="btn-cerrar" onclick="cerrarModales()">✕</button>
+            <div class="modal-header-img"><div class="img-fallback-wrap"><img id="fg-img" src="assets/lamina-barro.jpg" alt="Proceso constructivo Brumalia" onerror="this.style.opacity=0"></div></div>
+            <div class="modal-body">
+                <span class="etiqueta" id="fg-etiq">Fase 0X</span>
+                <h3 id="fg-tit">Título Fase</h3>
+                <h4 id="fg-sub" style="color: var(--texto-mutado); font-size: 1.1rem; margin-bottom: 1.5rem; font-weight: normal;">Subtítulo</h4>
+                <div id="fg-desc" style="font-size: 1.05rem; line-height: 1.7; color: var(--texto-oscuro); margin-bottom: 2rem;">Contenido profundo aquí...</div>
+                
+                <div class="caja-accion">
+                    <h4>¿Buscas asegurar la solidez de esta etapa en tu obra?</h4>
+                    <p>Conversemos sobre las necesidades técnicas de tu proyecto.</p>
+                    <a id="fg-link" href="https://wa.me/522283103115?text=Hola" target="_blank" class="btn-primario" style="margin-top: 0.5rem;">Consultar esta etapa</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FORMULARIO VOLUNTARIADO -->
+        <div class="modal-window" id="modal-form-voluntariado">
+            <button class="btn-cerrar" onclick="cerrarModales()">✕</button>
+            <div class="modal-body">
+                <div class="form-header-box">
+                    <h3>Programa de Voluntariado</h3>
+                    <p style="font-size: 1.1rem; color: var(--texto-oscuro);"><strong>Experiencia inmersiva y formativa en campo.</strong> Participa directamente en procesos reales de mampostería, bajareque, ensambles de bambú y aplicación de estucos.</p>
+                </div>
+                
+                <h4 style="color: var(--acento-arcilla); font-size: 1.2rem; margin-bottom: 1rem;">¿Qué ganas con este programa?</h4>
+                <ul style="margin: 0.5rem 0 2.5rem 1.5rem; font-size: 1.05rem;">
+                    <li><strong>Capacitación en Sitio (Learning by Doing):</strong> Aprendizaje 100% práctico mano a mano con los fundadores.</li>
+                    <li><strong>Constancia de Participación:</strong> Certificación técnica con valor curricular firmada por el taller.</li>
+                    <li><strong>Red de Colaboración:</strong> Vínculo directo con especialistas de la sustentabilidad y el diseño bioclimático.</li>
+                </ul>
+                
+                <h4 style="border-top: 1px solid rgba(0,0,0,0.1); padding-top: 2rem; margin-bottom: 1.5rem; font-size: 1.4rem; color: var(--bg-oscuro);">Formulario de Postulación</h4>
+                
+                <form id="form-voluntariado" onsubmit="enviarFormularioVoluntariado(event)">
+                    <div class="form-linea">
+                        <label>Nombre Completo</label>
+                        <input type="text" id="vol-nombre" class="input-brumalia" required placeholder="Ej. Ana García">
+                    </div>
+                    <div class="form-linea">
+                        <label>Lugar de Residencia y Edad</label>
+                        <input type="text" id="vol-lugar" class="input-brumalia" required placeholder="Ej. Xalapa, Ver - 24 años">
+                    </div>
+                    <div class="form-linea">
+                        <label>Área de Interés Principal</label>
+                        <select id="vol-interes" class="input-brumalia">
+                            <option>Bambú y Madera</option>
+                            <option>Pastas a la Cal y Tierra</option>
+                            <option>Mampostería y Piedra</option>
+                            <option>Diseño Constructivo</option>
+                            <option>Bioconstrucción</option>
+                            <option>Hornos y estufas de humo</option>
+                        </select>
+                    </div>
+                    <div class="form-linea">
+                        <label>Disponibilidad de Tiempo</label>
+                        <input type="text" id="vol-tiempo" class="input-brumalia" required placeholder="Ej. Fines de semana / Lunes a Viernes">
+                    </div>
+                    <button type="submit" class="btn-primario" style="width: 100%; margin-top: 1rem;">Enviar Postulación (Vía WhatsApp)</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- FORMULARIO ASESORÍA ESTRUCTURAS -->
+        <div class="modal-window" id="modal-asesoria-estructura">
+            <button class="btn-cerrar" onclick="cerrarModales()">✕</button>
+            <div class="modal-body">
+                <div class="form-header-box">
+                    <h3>Pre-Asesoría de Proyecto</h3>
+                    <p style="font-size: 1.15rem; color: var(--acento-arcilla); font-weight: 700; margin-top: 1rem;">Estás consultando: <span id="form-est-titulo" style="color: var(--texto-oscuro);">...</span></p>
+                </div>
+                
+                <p style="font-size: 1.1rem; color: var(--texto-oscuro); margin-bottom: 2rem;">Cada hábitat es un organismo vivo. Para asesorarte con la precisión que tu inversión y espacio merecen, cuéntanos un poco sobre tu visión antes de contactarnos.</p>
+                
+                <form id="form-estructura" onsubmit="enviarAsesoriaEstructura(event)">
+                    <div class="form-linea">
+                        <label>¿En qué etapa se encuentra tu visión?</label>
+                        <select id="est-estado" class="input-brumalia" required>
+                            <option value="" disabled selected>✓ Selecciona una opción...</option>
+                            <option>Tengo un terreno y quiero un proyecto desde cero</option>
+                            <option>Busco una remodelación o ampliación de mi casa o local</option>
+                            <option>Quiero crear una atmósfera completa de interiorismo</option>
+                            <option>Solo busco integrar un elemento estructural o decorativo</option>
+                        </select>
+                    </div>
+                    <div class="form-linea">
+                        <label>Cuéntanos un poco más sobre tu idea (Opcional)</label>
+                        <textarea id="est-detalles" class="input-brumalia" placeholder="Medidas aproximadas, ubicación, uso (casa, local comercial, cabaña) o lo que tengas en mente..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primario" style="width: 100%; margin-top: 1rem;">Iniciar Conversación ➔</button>
+                    <p style="text-align: center; font-size: 0.85rem; color: var(--texto-mutado); margin-top: 1rem;">Te llevaremos a WhatsApp con esta información lista para enviar.</p>
+                </form>
+            </div>
+        </div>
+
+        <!-- FORMULARIO COTIZACIÓN PIGMENTOS -->
+        <div class="modal-window" id="modal-asesoria-pigmento">
+            <button class="btn-cerrar" onclick="cerrarModales()">✕</button>
+            <div class="modal-body">
+                <div class="form-header-box">
+                    <h3>Cotización de Recubrimiento</h3>
+                    <p style="font-size: 1.15rem; color: var(--acento-arcilla); font-weight: 700; margin-top: 1rem;">Pigmento Seleccionado: <span id="form-pig-titulo" style="color: var(--texto-oscuro);">...</span></p>
+                </div>
+                
+                <p style="font-size: 1.1rem; color: var(--texto-oscuro); margin-bottom: 2rem;">Nuestras pastas minerales respiran, protegen contra la humedad y transforman la luz. Ayúdanos a entender dónde vivirá este pigmento para darte la mejor recomendación técnica.</p>
+                
+                <form id="form-pigmento" onsubmit="enviarAsesoriaPigmento(event)">
+                    <div class="form-linea">
+                        <label>¿Dónde imaginas aplicar este recubrimiento?</label>
+                        <select id="pig-superficie" class="input-brumalia" required>
+                            <option value="" disabled selected>Selecciona una opción...</option>
+                            <option>Muros Interiores o Exteriores</option>
+                            <option>Pisos y Firmes</option>
+                            <option>Zonas Húmedas (Baños, Tinas, Albercas)</option>
+                            <option>Estructuras de Bambú o Madera</option>
+                            <option>Cocinas de Humo / Alfarería</option>
+                            <option>Otro uso específico</option>
+                        </select>
+                    </div>
+                    <div class="form-linea">
+                        <label>¿Cuántos metros cuadrados estimas aproximadamente?</label>
+                        <input type="text" id="pig-metros" class="input-brumalia" required placeholder="Ej. 40 m2 (o escribe 'No estoy seguro')">
+                    </div>
+                    <button type="submit" class="btn-primario" style="width: 100%; margin-top: 1rem;">Solicitar Cotización Técnica ➔</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- VACANTES -->
+        <div class="modal-window" id="modal-vacantes">
+            <button class="btn-cerrar" onclick="cerrarModales()">✕</button>
+            <div class="modal-body">
+                <span class="etiqueta">Bolsa de Trabajo Xalapa</span>
+                <h3>Únete a la Cuadrilla</h3>
+                <p style="margin-bottom: 1.5rem;">Buscamos profesionales con disposición para el rigor técnico.</p>
+                <ul>
+                    <li><strong>Maestros Albañiles:</strong> Especialistas en mampostería, plomos exactos y acabados finos.</li>
+                    <li><strong>Oficiales Carpinteros/Herreros:</strong> Precisión en cortes y soldaduras estructurales.</li>
+                    <li><strong>Ayudantes Generales:</strong> Con ganas de aprender oficios y técnicas naturales.</li>
+                </ul>
+                <div class="caja-accion" style="margin-top: 2.5rem;">
+                    <h4>¿Te interesa formar parte del equipo?</h4>
+                    <a href="https://wa.me/522283103115?text=Hola%20Brumalia,%20me%20interesa%20una%20vacante%20en%20su%20equipo%20de%20obra." target="_blank" class="btn-primario">Contactar por Vacante</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CURSOS Y TALLERES -->
+        <div class="modal-window" id="modal-cursos">
+            <button class="btn-cerrar" onclick="cerrarModales()">✕</button>
+            <div class="modal-body">
+                <span class="etiqueta">Programas Formativos</span>
+                <h3>Catálogo de Talleres</h3>
+                <div style="margin-top: 2rem;">
+                    
+                    <button class="curso-btn" onclick="window.open('https://wa.me/522283103115?text=Info%20Bambú', '_blank')">
+                        <span class="curso-btn-titulo"><strong>Estructuras de Bambú:</strong> Diseño, cortes y ensambles de precisión ➔</span>
+                        <div class="curso-impartido">Impartido por: <img src="assets/logo.png" alt="Brumalia" onerror="this.style.opacity=0"></div>
+                    </button>
+                    
+                    <button class="curso-btn" onclick="window.open('https://wa.me/522283103115?text=Info%20Domos', '_blank')">
+                        <span class="curso-btn-titulo"><strong>Diseño y Ensamble de Domos Geodésicos:</strong> Geometría espacial y bioconstrucción ➔</span>
+                        <div class="curso-impartido">Impartido por: <img src="assets/logo.png" alt="Brumalia" onerror="this.style.opacity=0"></div>
+                    </button>
+                    
+                    <button class="curso-btn" onclick="window.open('https://wa.me/522283103115?text=Info%20Cal', '_blank')">
+                        <span class="curso-btn-titulo"><strong>Recubrimientos y Acabados Minerales:</strong> Pastas a la cal, estucos naturales, bruñidos y Tadelakt ➔</span>
+                        <div class="curso-impartido">Impartido por: <img src="assets/logo.png" alt="Brumalia" onerror="this.style.opacity=0"></div>
+                    </button>
+                    
+                    <button class="curso-btn" onclick="window.open('https://wa.me/522283103115?text=Info%20Cerámica', '_blank')">
+                        <span class="curso-btn-titulo"><strong>Cerámica Artesanal y Constructiva:</strong> Ladrillos, fachaletas y elementos decorativos ➔</span>
+                        <div class="curso-impartido">Impartido por: <img src="assets/logo.png" alt="Brumalia" onerror="this.style.opacity=0"></div>
+                    </button>
+                    
+                    <button class="curso-btn" onclick="window.open('https://wa.me/522283103115?text=Info%20Tintes', '_blank')">
+                        <span class="curso-btn-titulo"><strong>Tintes y Pigmentos Naturales:</strong> Extracción botánica y aplicación mineral ➔</span>
+                        <div class="curso-impartido">
+                            Impartido por: 
+                            <img src="assets/logo.png" alt="Brumalia" onerror="this.style.opacity=0">
+                            <img src="assets/logo-fachamama.png" alt="Facha Mama" onerror="this.style.opacity=0">
+                        </div>
+                    </button>
+
+                    <button class="curso-btn" onclick="window.open('https://wa.me/522283103115?text=Info%20Fibras', '_blank')">
+                        <span class="curso-btn-titulo"><strong>Diseño y Tejido con Fibras Naturales:</strong> Mimbre, bambú y aplicaciones artesanales ➔</span>
+                        <div class="curso-impartido">
+                            Impartido por: 
+                            <img src="assets/logo.png" alt="Brumalia" onerror="this.style.opacity=0">
+                            <img src="assets/logo-mayacscale.png" alt="Mayac Scale" onerror="this.style.opacity=0">
+                        </div>
+                    </button>
+
+                    <button class="curso-btn" style="border-bottom: 1px solid rgba(0,0,0,0.1);" onclick="window.open('https://wa.me/522283103115?text=Info%20Selladores', '_blank')">
+                        <span class="curso-btn-titulo"><strong>Formulación y Aplicación de Selladores e Impermeabilizantes Naturales en Bioconstrucción:</strong> Nivel III (Especialización) ➔</span>
+                        <div class="curso-impartido">Impartido por: <img src="assets/logo.png" alt="Brumalia" onerror="this.style.opacity=0"></div>
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <script>
+        // === 0. MOTOR DE MARCA DE AGUA DINÁMICA EDITORIAL (HTML5 CANVAS) ===
+        const BrumaliaWatermark = (function() {
+            let selloPreparadoPromise = null;
+            const esProtocoloWeb = window.location.protocol === 'http:' || window.location.protocol === 'https:';
+
+            function obtenerSelloCal() {
+                if (selloPreparadoPromise) return selloPreparadoPromise;
+
+                selloPreparadoPromise = new Promise((resolve) => {
+                    if (!esProtocoloWeb) {
+                        resolve(null);
+                        return;
+                    }
+                    const logoImg = new Image();
+                    logoImg.src = 'assets/logo.png';
+                    logoImg.onload = function() {
+                        try {
+                            const w = logoImg.naturalWidth;
+                            const h = logoImg.naturalHeight;
+                            if (!w || !h) { resolve(null); return; }
+
+                            const c = document.createElement('canvas');
+                            c.width = w;
+                            c.height = h;
+                            const ctx = c.getContext('2d');
+                            ctx.drawImage(logoImg, 0, 0, w, h);
+
+                            const imgData = ctx.getImageData(0, 0, w, h);
+                            const data = imgData.data;
+
+                            // Extraer silueta limpia: elimina fondo claro/blanco y convierte trazos a blanco cal (#F2EFE9)
+                            for (let i = 0; i < data.length; i += 4) {
+                                const r = data[i];
+                                const g = data[i + 1];
+                                const b = data[i + 2];
+                                const a = data[i + 3];
+
+                                if (a < 15) {
+                                    data[i + 3] = 0;
+                                    continue;
+                                }
+
+                                const luminancia = (0.299 * r + 0.587 * g + 0.114 * b);
+                                if (luminancia > 232) {
+                                    data[i + 3] = 0;
+                                } else {
+                                    const intensidadTinta = Math.min(1, (232 - luminancia) / 140);
+                                    data[i] = 242;     // R (#F2EFE9)
+                                    data[i + 1] = 239; // G
+                                    data[i + 2] = 233; // B
+                                    data[i + 3] = Math.round(a * intensidadTinta);
+                                }
+                            }
+
+                            ctx.putImageData(imgData, 0, 0);
+                            resolve(c);
+                        } catch (err) {
+                            resolve(null);
+                        }
+                    };
+                    logoImg.onerror = function() { resolve(null); };
+                });
+
+                return selloPreparadoPromise;
+            }
+
+            async function estampar(imgElement, rutaOriginal) {
+                if (!imgElement) return;
+                const srcActual = rutaOriginal || imgElement.getAttribute('src') || '';
+                if (!srcActual || srcActual.startsWith('data:')) {
+                    imgElement.style.opacity = 1;
+                    return;
+                }
+
+                imgElement.dataset.targetSrc = srcActual;
+
+                // En apertura local (file:///), aplicar ruta directamente sin procesar canvas
+                if (!esProtocoloWeb) {
+                    imgElement.onload = () => {
+                        if (imgElement.dataset.targetSrc === srcActual) {
+                            imgElement.style.opacity = 1;
+                        }
+                    };
+                    imgElement.onerror = () => {
+                        if (imgElement.dataset.targetSrc === srcActual) {
+                            imgElement.style.opacity = 0;
+                        }
+                    };
+                    imgElement.src = srcActual;
+                    if (imgElement.complete && imgElement.naturalWidth > 0) {
+                        imgElement.style.opacity = 1;
+                    }
+                    return;
+                }
+
+                if (imgElement.dataset.watermarkedFor === srcActual && imgElement.src.startsWith('data:')) {
+                    imgElement.style.opacity = 1;
+                    return;
+                }
+
+                // Cargar imagen fuente limpia en memoria para procesar marca de agua en entorno web (http/https)
+                const fuente = new Image();
+                fuente.src = srcActual;
+
+                fuente.onload = async function() {
+                    if (imgElement.dataset.targetSrc !== srcActual) return;
+
+                    const selloCanvas = await obtenerSelloCal();
+                    if (!selloCanvas) {
+                        imgElement.src = srcActual;
+                        imgElement.style.opacity = 1;
+                        return;
+                    }
+
+                    try {
+                        const natW = fuente.naturalWidth;
+                        const natH = fuente.naturalHeight;
+                        if (!natW || !natH) {
+                            imgElement.src = srcActual;
+                            imgElement.style.opacity = 1;
+                            return;
+                        }
+
+                        const canvas = document.createElement('canvas');
+                        canvas.width = natW;
+                        canvas.height = natH;
+                        const ctx = canvas.getContext('2d');
+
+                        // 1. Dibujar fotografía original a resolución nativa
+                        ctx.drawImage(fuente, 0, 0, natW, natH);
+
+                        // 2. Escalado equilibrado: 13% del lado más corto
+                        const ladoCorto = Math.min(natW, natH);
+                        const tamanoObjetivo = Math.max(44, Math.round(ladoCorto * 0.13));
+                        const ratioLogo = selloCanvas.width / selloCanvas.height;
+
+                        let logoW, logoH;
+                        if (ratioLogo >= 1) {
+                            logoW = tamanoObjetivo;
+                            logoH = Math.round(tamanoObjetivo / ratioLogo);
+                        } else {
+                            logoH = tamanoObjetivo;
+                            logoW = Math.round(tamanoObjetivo * ratioLogo);
+                        }
+
+                        // 3. Zona Segura ("Safe Zone"): margen interno del 8% inferior y derecho
+                        const margenX = Math.round(natW * 0.08);
+                        const margenY = Math.round(natH * 0.08);
+                        const posX = natW - logoW - margenX;
+                        const posY = natH - logoH - margenY;
+
+                        // 4. Acabado Editorial "Sello en Cal": opacidad 38% + micro-contraste carbón
+                        ctx.save();
+                        ctx.globalAlpha = 0.38;
+                        ctx.shadowColor = 'rgba(26, 24, 23, 0.45)';
+                        ctx.shadowBlur = Math.max(4, Math.round(ladoCorto * 0.012));
+                        ctx.shadowOffsetX = 0;
+                        ctx.shadowOffsetY = Math.max(1, Math.round(ladoCorto * 0.003));
+                        ctx.drawImage(selloCanvas, posX, posY, logoW, logoH);
+                        ctx.restore();
+
+                        const dataUrl = canvas.toDataURL('image/jpeg', 0.92);
+                        if (imgElement.dataset.targetSrc !== srcActual) return;
+                        imgElement.dataset.watermarkedFor = srcActual;
+                        imgElement.src = dataUrl;
+                        imgElement.style.opacity = 1;
+                    } catch (e) {
+                        // Respaldo automático si el entorno restringe canvas
+                        imgElement.src = srcActual;
+                        imgElement.style.opacity = 1;
+                    }
+                };
+
+                fuente.onerror = function() {
+                    if (imgElement.dataset.targetSrc === srcActual) {
+                        imgElement.style.opacity = 0;
+                    }
+                };
+            }
+
+            function inicializarProteccion() {
+                // Bloqueo disuasorio de menú contextual sobre fotografías del portafolio
+                document.addEventListener('contextmenu', function(e) {
+                    if (e.target && e.target.closest('.img-fallback-wrap')) {
+                        e.preventDefault();
+                    }
+                });
+
+                // Estampar todas las imágenes iniciales dentro de .img-fallback-wrap
+                document.querySelectorAll('.img-fallback-wrap img').forEach(img => {
+                    const ruta = img.getAttribute('src');
+                    if (ruta && !ruta.startsWith('data:')) {
+                        estampar(img, ruta);
+                    }
+                });
+            }
+
+            return { estampar, inicializarProteccion };
+        })();
+
+        document.addEventListener('DOMContentLoaded', () => {
+            BrumaliaWatermark.inicializarProteccion();
+        });
+
+        // === 1. MENÚ MÓVIL Y SCROLL REVEAL ===
+        const btnMenu = document.getElementById('btnMenuToggle');
+        const cortinaMenu = document.getElementById('menuMovil');
+        
+        function toggleMenuMovil() {
+            btnMenu.classList.toggle('abierto');
+            cortinaMenu.classList.toggle('abierto');
+            document.body.style.overflow = cortinaMenu.classList.contains('abierto') ? 'hidden' : 'auto';
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // === 2. CONTROL DE MODALES ===
+        const overlay = document.getElementById('overlay-global');
+        const ventanas = document.querySelectorAll('.modal-window');
+
+        function abrirModal(id) {
+            if(id.startsWith('fase-') && !document.getElementById(id)) {
+                prepararFaseGenerica(id);
+                id = 'fase-generica';
+            }
+            ventanas.forEach(v => v.classList.remove('active'));
+            const objetivo = document.getElementById(id);
+            if(objetivo) {
+                overlay.classList.add('active');
+                objetivo.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function limpiarFormularios() {
+            const forms = ['form-voluntariado', 'form-estructura', 'form-pigmento'];
+            forms.forEach(id => {
+                const f = document.getElementById(id);
+                if(f) f.reset();
+            });
+        }
+
+        function cerrarModales() {
+            overlay.classList.remove('active');
+            ventanas.forEach(v => v.classList.remove('active'));
+            document.body.style.overflow = 'auto';
+            setTimeout(limpiarFormularios, 400); 
+        }
+        
+        overlay.addEventListener('click', e => { if(e.target === overlay) cerrarModales(); });
+
+        const fasesData = {
+            'fase-1': { img: 'lamina-trazo.jpg', tit: 'El Trazo del Refugio', sub: 'Diálogo, Bioclimática y Viabilidad Financiera.', desc: 'Un espacio durable no nace de un plano genérico; nace de analizar el asoleamiento, la microgeografía y los vientos dominantes de tu terreno en Xalapa o Veracruz. Trazamos proyectos con ventilación natural y presupuestos claros para proteger tu inversión desde el primer día.', link: 'Fase 1 (Trazo)'},
+            'fase-2': { img: 'lamina-cimiento.jpg', tit: 'Cimiento y Osamenta', sub: 'Ingeniería Estructural y Raíces de Piedra.', desc: 'Para que la estética perdure, necesita raíces indestructibles. Ejecutamos cimentación en piedra braza volcánica con barreras hidrófugas integrales que bloquean la humedad del suelo y muros sismorresistentes diseñados para durar generaciones.', link: 'Fase 2 (Cimientos)'},
+            'fase-3': { img: 'lamina-barro.jpg', tit: 'Barro Vivo y Alfarería de Autor', sub: 'Pavimentos, Celosías y Piezas Exclusivas.', desc: 'Horneamos losetas de petatillo, fachaletas y celosías artesanales con moldes a medida. Nuestras piezas de barro aportan inercia térmica, ventilación cruzada y un carácter distintivo de bajo mantenimiento ideal para residencias, patios y cafeterías.', link: 'Fase 3 (Barro)'},
+            'fase-4': { img: 'lamina-pieles.jpg', tit: 'Pieles Minerales y Acabados Transpirables', sub: 'Estucos que Respiran y Texturas Nobles.', desc: 'Los muros no deben encapsular humedad bajo capas plásticas que se ampollan. Formulamos estucos vivos a la cal y resina natural de Chucún que erradican el salitre y el moho de raíz, regulando el confort térmico interior en climas lluviosos.', link: 'Fase 4 (Pieles)'},
+            'fase-5': { img: 'lamina-ensamble.jpg', tit: 'Herrería y Carpintería de Ensamble', sub: 'La Madera y el Acero Integrados a la Obra.', desc: 'Trabajamos maderas tratadas contra humedad e insectos y herrería estructural fabricada en sincronía con la albañilería. Utilizamos ensambles de precisión que absorben el movimiento natural de la madera sin fisuras ni desajustes.', link: 'Fase 5 (Ensamble)'},
+            'fase-6': { img: 'lamina-atmosfera.jpg', tit: 'Atmósfera e Interiorismo Vivo', sub: 'Luz, Escultura y la Memoria del Espacio.', desc: 'Una construcción terminada cobra vida en los detalles sensoriales. Moldeamos luminarias de barro, barras de servicio, nichos y moblaje esculpido en obra para convertir cada espacio en un refugio habitacional o un local comercial inolvidable.', link: 'Fase 6 (Atmósfera)'}
+        };
+
+        function prepararFaseGenerica(id) {
+            const d = fasesData[id];
+            const fgImg = document.getElementById('fg-img');
+            const nuevaRuta = `assets/${d.img}`;
+            fgImg.style.opacity = 0;
+            fgImg.alt = `${d.tit} - Brumalia Xalapa`;
+            BrumaliaWatermark.estampar(fgImg, nuevaRuta);
+
+            document.getElementById('fg-etiq').innerText = `Fase 0${id.split('-')[1]}`;
+            document.getElementById('fg-tit').innerText = d.tit;
+            document.getElementById('fg-sub').innerText = d.sub;
+            document.getElementById('fg-desc').innerHTML = `<p>${d.desc}</p>`;
+            document.getElementById('fg-link').href = `https://wa.me/522283103115?text=Hola,%20me%20interesa%20la%20${d.link}`;
+        }
+
+        // === 3. LÓGICA DIRECTORIO (RUTAS ESTÁNDAR INTACTAS) ===
+        let seleccionEstructura = "Domos Geodésicos de Bioensamble";
+        const emailFormSubmit = "brumalia.xalapa@gmail.com";
+        const telWA = "522283103115";
+
+        const dirData = {
+            'domos': { 
+                tit: 'Domos Geodésicos de Bioensamble', 
+                desc: 'Ingeniería espacial sismorresistente en bambú o madera con ensamble de alta precisión. Ideales para cabañas rentables (Airbnb), estudios y espacios de alto impacto visual en bosque de niebla y terrenos con pendiente.',
+                img: 'domo-geodesico.jpg', t1: 'domos-det-1.jpg', t2: 'domos-det-2.jpg' 
+            },
+            'techo': { 
+                tit: 'Techos Bioclimáticos', 
+                desc: 'Techumbres diseñadas para maximizar la ventilación cruzada y expulsar el aire caliente naturalmente, logrando interiores frescos y sin condensación sin depender de aire acondicionado.',
+                img: 'techo-bioclimatico.jpg', t1: 'techo-det-1.jpg', t2: 'techo-det-2.jpg' 
+            },
+            'muro_pasivo': { 
+                tit: 'Muros Pasivos de Ventilación', 
+                desc: 'Sistemas de muros con celosías cerámicas y conductos térmicos que renuevan y enfrían el aire antes de entrar a la vivienda o local comercial.',
+                img: 'muro-pasivo.jpg', t1: 'muro-det-1.jpg', t2: 'muro-det-2.jpg' 
+            },
+            'zapatas': { 
+                tit: 'Zapatas y Cimentación', 
+                desc: 'Mampostería en piedra braza volcánica con impermeabilización capilar integral que bloquea el paso de la humedad del subsuelo desde la raíz de la obra.',
+                img: 'zapatas.jpg', t1: 'zapatas-det-1.jpg', t2: 'zapatas-det-2.jpg' 
+            },
+            'pisos': { 
+                tit: 'Pisos y Firmes Pulidos', 
+                desc: 'Colados de alta resistencia y pavimentos de barro artesanal en geometrías de espiga o petatillo; durabilidad patrimonial de bajo mantenimiento para patios e interiores.',
+                img: 'pisos-firmes.jpg', t1: 'pisos-det-1.jpg', t2: 'pisos-det-2.jpg' 
+            },
+            'bajareque': { 
+                tit: 'Muros de Bajareque Tecnificado', 
+                desc: 'Estructuras de caña y bambú recubiertas con tierra compactada y fibras naturales que brindan aislamiento térmico y acústico superior para recámaras, estudios y cabañas.',
+                img: 'bajareque.jpg', t1: 'bajareque-det-1.jpg', t2: 'bajareque-det-2.jpg' 
+            },
+            'remodelacion': { 
+                tit: 'Remodelación Integral', 
+                desc: 'Rescate e intervención de casas, locales comerciales y cafeterías en Xalapa y Veracruz utilizando materiales nobles para elevar su confort, estética y plusvalía.',
+                img: 'remodelacion-base.jpg', t1: 'remodelacion-det-1.jpg', t2: 'remodelacion-det-2.jpg' 
+            },
+            'bambu': { 
+                tit: 'Pabellones de Bambú Guadua', 
+                desc: 'Estructuras ligeras de gran formato en bambú preservado, con cortes de precisión y uniones pasantes de alta ingeniería para terrazas, restaurantes y áreas comunes.',
+                img: 'bambu.jpg', t1: 'bambu-det-1.jpg', t2: 'bambu-det-2.jpg' 
+            },
+            'pergolas': { 
+                tit: 'Pérgolas de Madera y Bambú', 
+                desc: 'Cubiertas de sombra para terrazas y jardines en madera tratada o bambú, con ensambles limpios y teja de barro vitrificada o sellada contra humedad y moho.',
+                img: 'pergolas.jpg', t1: 'pergolas-det-1.jpg', t2: 'pergolas-det-2.jpg' 
+            },
+            'tuneles': { 
+                tit: 'Túneles Botánicos', 
+                desc: 'Pasillos arqueados estructurales diseñados para ser vestidos por flora trepadora viva, creando recorridos frescos en jardines, fincas y espacios de eventos.',
+                img: 'tuneles.jpg', t1: 'tuneles-det-1.jpg', t2: 'tuneles-det-2.jpg' 
+            },
+            'arcos': { 
+                tit: 'Arcos de Mampostería', 
+                desc: 'Arcos de medio punto en piedra y ladrillo artesanal para portales, accesos principales e interiorismo con carácter atemporal.',
+                img: 'arcos.jpg', t1: 'arcos-det-1.jpg', t2: 'arcos-det-2.jpg' 
+            },
+            'cocinas': { 
+                tit: 'Cocinas de Humo Eficientes', 
+                desc: 'Estufas ahorradoras de leña con tiro calculado y campanas de barro o mampostería que extraen el humo por completo, ideales para hogares campestres y cocinas tradicionales.',
+                img: 'cocinas-humo.jpg', t1: 'cocinas-det-1.jpg', t2: 'cocinas-det-2.jpg' 
+            },
+            'totems': { 
+                tit: 'Tótems y Escultura Decorativa', 
+                desc: 'Estructuras escultóricas y tótems integrados al paisaje en mampostería, barro o madera que funcionan como hitos visuales de acceso e identidad.',
+                img: 'totems-base.jpg', t1: 'totems-det-1.jpg', t2: 'totems-det-2.jpg' 
+            }
+        };
+
+        function cargarDirectorio(clave, boton) {
+            document.querySelectorAll('.dir-btn').forEach(b => b.classList.remove('active'));
+            boton.classList.add('active');
+            
+            const data = dirData[clave];
+            seleccionEstructura = data.tit; 
+            
+            const imgEl = document.getElementById('dirImgBase');
+            const thumb1 = document.getElementById('dirThumb1');
+            const thumb2 = document.getElementById('dirThumb2');
+
+            imgEl.style.opacity = 0;
+            thumb1.style.opacity = 0;
+            thumb2.style.opacity = 0;
+
+            imgEl.alt = `${data.tit} - Brumalia Xalapa y Veracruz`;
+            thumb1.alt = `${data.tit} detalle 1 - Brumalia`;
+            thumb2.alt = `${data.tit} detalle 2 - Brumalia`;
+
+            setTimeout(() => { 
+                BrumaliaWatermark.estampar(imgEl, `assets/${data.img}`);
+                BrumaliaWatermark.estampar(thumb1, `assets/${data.t1}`);
+                BrumaliaWatermark.estampar(thumb2, `assets/${data.t2}`);
+            }, 220);
+
+            document.getElementById('dirTitulo').innerText = data.tit;
+            document.getElementById('dirDesc').innerText = data.desc;
+        }
+
+        function intercambiarImagenDirector(contenedorThumb) {
+            const imgPrincipal = document.getElementById('dirImgBase');
+            const imgThumb = contenedorThumb.querySelector('img');
+            
+            const tempSrc = imgPrincipal.src;
+            const tempAlt = imgPrincipal.alt;
+            const tempMark = imgPrincipal.dataset.watermarkedFor || '';
+            const tempTarget = imgPrincipal.dataset.targetSrc || '';
+
+            imgPrincipal.style.opacity = 0;
+            imgThumb.style.opacity = 0;
+            
+            setTimeout(() => {
+                imgPrincipal.src = imgThumb.src;
+                imgPrincipal.alt = imgThumb.alt;
+                imgPrincipal.dataset.watermarkedFor = imgThumb.dataset.watermarkedFor || '';
+                imgPrincipal.dataset.targetSrc = imgThumb.dataset.targetSrc || '';
+
+                imgThumb.src = tempSrc;
+                imgThumb.alt = tempAlt;
+                imgThumb.dataset.watermarkedFor = tempMark;
+                imgThumb.dataset.targetSrc = tempTarget;
+
+                imgPrincipal.style.opacity = 1;
+                imgThumb.style.opacity = 1;
+            }, 250);
+        }
+
+        // === 4. LÓGICA PIGMENTOS ===
+        let seleccionPigmento = "Blanco Cal Viva";
+        const pigData = {
+            'blanco': { img: 'blanco-cal.jpg', tit: 'Blanco Cal Viva', desc: 'Acabado mineral puro y fungicida natural que erradica moho y salitre. Deja respirar el muro sin ampollarse, regula la humedad ambiental e ilumina los interiores.', hex: '#e6e2d8' },
+            'chucun': { img: 'resina-chucun.jpg', tit: 'Resina Chucún', desc: 'Estuco satinado impermeable tradicional extraído de la corteza del árbol de Chucún. Ideal para baños, regaderas, zonas húmedas y fachadas con calidez orgánica sin juntas.', hex: '#C2B29B' },
+            'arena': { img: 'arena-calida.jpg', tit: 'Arena Cálida', desc: 'Revestimiento mineral de tono terroso sutil que aporta confort visual y textura artesanal continua a salas, recámaras y locales comerciales sin necesidad de repintado constante.', hex: '#d4b895' },
+            'gris': { img: 'gris-piedra.jpg', tit: 'Gris Volcánico', desc: 'Acabado mineral de alta dureza y elegancia sobria para áreas húmedas, barras de servicio o muros de acento resistentes al desgaste diario.', hex: '#9a9a9a' },
+            'terracota': { img: 'terracota.jpg', tit: 'Terracota Ancestral', desc: 'Pigmento mineral rojo arcilla integrado a la masa del estuco; conserva su color intenso en exteriores sin descascararse bajo el sol o la lluvia.', hex: '#b56a4f' },
+            'salvia': { img: 'verde-salvia.jpg', tit: 'Verde Salvia', desc: 'Formulación mineral transpirable que integra muros interiores y exteriores con el paisaje vegetal, manteniendo frescura térmica y resistencia biológica.', hex: '#a3b19b' },
+            'agave': { img: 'azul-agave.jpg', tit: 'Azul Agave', desc: 'Acabado mineral fresco y resistente a la humedad para patios, fuentes, nichos y detalles constructivos de inspiración mexicana contemporánea.', hex: '#2d3b70' },
+            'rosa': { img: 'rosa-cantera.jpg', tit: 'Rosa Cantera', desc: 'Estuco mineral inspirado en la piedra volcánica natural que aporta calidez luminosa y regulación higrotérmica en espacios habitacionales.', hex: '#d1a3a4' },
+            'amatista': { img: 'lila-amatista.jpg', tit: 'Lila Amatista', desc: 'Pigmento mineral profundo y sereno que favorece el descanso acústico y visual en habitaciones, estudios o espacios terapéuticos.', hex: '#8a7396' }
+        };
+
+        function cargarPigmento(clave, swatch) {
+            document.querySelectorAll('.color-swatch').forEach(s => s.classList.remove('active'));
+            swatch.classList.add('active');
+            const data = pigData[clave];
+            seleccionPigmento = data.tit;
+            
+            document.getElementById('contenedor-color-fondo').style.background = data.hex;
+            const imgEl = document.getElementById('pigImg');
+            imgEl.alt = `Textura de estuco mineral ${data.tit} resistente a humedad - Brumalia Xalapa`;
+            
+            imgEl.style.opacity = 0;
+            setTimeout(() => {
+                BrumaliaWatermark.estampar(imgEl, `assets/${data.img}`);
+            }, 220);
+
+            document.getElementById('pigTitulo').innerText = data.tit;
+            document.getElementById('pigDesc').innerText = data.desc;
+        }
+
+        // === 5. FORMULARIOS ===
+        function enviarFormSubmit(asunto, bodyJson) {
+            bodyJson.Asunto = asunto;
+            fetch(`https://formsubmit.co/ajax/${emailFormSubmit}`, {
+                method: "POST", headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: JSON.stringify(bodyJson)
+            }).catch(e => console.log('Envío silencioso procesado.'));
+        }
+
+        function enviarFormularioVoluntariado(e) {
+            e.preventDefault();
+            const n = document.getElementById('vol-nombre').value;
+            const l = document.getElementById('vol-lugar').value;
+            const i = document.getElementById('vol-interes').value;
+            const t = document.getElementById('vol-tiempo').value;
+            
+            enviarFormSubmit("Postulación Voluntariado", { Nombre: n, Lugar: l, Interes: i, Tiempo: t });
+            
+            const texto = `Hola Brumalia. Envío postulación voluntariado:%0A- Nombre: ${n}%0A- Interés: ${i}%0A- Disponibilidad: ${t}`;
+            window.open(`https://wa.me/${telWA}?text=${texto}`, '_blank');
+            cerrarModales();
+        }
+
+        function prepararFormularioEstructura() {
+            document.getElementById('form-est-titulo').innerText = seleccionEstructura;
+            abrirModal('modal-asesoria-estructura');
+        }
+
+        function enviarAsesoriaEstructura(e) {
+            e.preventDefault();
+            const estado = document.getElementById('est-estado').value;
+            const detalles = document.getElementById('est-detalles').value;
+            
+            enviarFormSubmit("Asesoría Estructura", { Estructura: seleccionEstructura, Estado: estado, Detalles: detalles });
+            
+            const texto = `Hola Brumalia, requiero asesoría para [${seleccionEstructura}].%0AEstado: ${estado}.`;
+            window.open(`https://wa.me/${telWA}?text=${texto}`, '_blank');
+            cerrarModales();
+        }
+
+        function prepararFormularioPigmento() {
+            document.getElementById('form-pig-titulo').innerText = seleccionPigmento;
+            abrirModal('modal-asesoria-pigmento');
+        }
+
+        function enviarAsesoriaPigmento(e) {
+            e.preventDefault();
+            const sup = document.getElementById('pig-superficie').value;
+            const met = document.getElementById('pig-metros').value;
+            
+            enviarFormSubmit("Cotización Pigmento", { Pigmento: seleccionPigmento, Superficie: sup, Metros: met });
+            
+            const texto = `Hola, quiero cotizar la aplicación de *${seleccionPigmento}*.%0ASuperficie: ${sup}%0AÁrea: ${met} m2.`;
+            window.open(`https://wa.me/${telWA}?text=${texto}`, '_blank');
+            cerrarModales();
+        }
+    </script>
+</body>
+</html>
